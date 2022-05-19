@@ -563,10 +563,10 @@ img.volta-img {
 }
 /* .member-card:nth-last-child(1):nth-child(odd) {
     grid-column: 2 / 4;
-}
-.member-card:nth-last-child(2):nth-child(even) {
-    grid-column: 3 / 4;
 } */
+.member-card:nth-last-child(1):nth-child(even) {
+    grid-column: 2 / 3;
+}
 .member-card h3 {
     font-size: 55px;
     margin-bottom: -30px;
