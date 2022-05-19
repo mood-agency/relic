@@ -30,11 +30,11 @@ body {
 
 header.header {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     padding: 1rem;
-    background-image: url('/assets/images/roberto-nickson-5JOMpgzPDK4-unsplash.jpg');
+    background-image: url('/assets/images/roberto-nickson-5JOMpgzPDK4-unsplash-min.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,23 +47,23 @@ header.header {
     justify-content: space-between;
     align-items: flex-start;
 }
-.desc-1 {
+.navigation .desc-1 {
     margin: 0 auto;
     font-size: 21px;
 }
 /* Description box styles */
-.desc-box {
+.navigation .desc-box {
     width: 45%;
-    height: 100%;
+    height: 95vh !important;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between !important;
 }
-.desc-2 {
+.navigation .desc-2 {
     font-size: 69px;
     line-height: 100%;
 }
-.sub-icons {
+.navigation .sub-icons {
     display: inline-flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -79,7 +79,12 @@ header.header {
 /* Nav */
 nav {
 }
-
+.sub-navigation {
+    display: none;
+}
+.sub-navigation .header-text {
+    display: none;
+}
 /* Main content */
 
 /* Section 1 */
@@ -724,4 +729,57 @@ a.contact-mail {
 }
 .rights {
     font-size: 21px;
+}
+
+/* Mobile Layout */
+
+@media only screen and (max-width: 768px) {
+    /* Header Content */
+    header.header {
+        padding: 0.6rem;
+        min-height: fit-content;
+        background-size: cover;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .navigation {
+        align-items: flex-start;
+    }
+    .navigation .header-text {
+        display: none;
+    }
+    /* Nav */
+    nav {
+    }
+    .sub-navigation {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        height: fit-content;
+        color: #efefef;
+    }
+    .sub-navigation .header-text {
+        display: block;
+    }
+    .sub-navigation .desc-1 {
+        margin-top: 40px;
+    }
+    .sub-navigation .desc-2 {
+        margin: 40px 0;
+        font-size: 45px;
+    }
+    .sub-navigation .desc-box .sub-icons {
+        width: 100%;
+        margin: 40px 0;
+        display: inline-flex;
+        justify-content: space-around;
+        text-align: center;
+        font-size: 12px;
+    }
+    .sub-navigation .desc-box .sub-icons img {
+        width: auto;
+    }
+
+    /* Main Content */
 }
