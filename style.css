@@ -153,6 +153,7 @@ section.product-section {
 }
 img.relic-web-home {
     width: 40%;
+    margin-right: 40px;
 }
 .detail-box {
     max-width: 40%;
