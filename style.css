@@ -119,6 +119,7 @@ section.intro-section {
 section.product-section {
     background-color: #000000;
     width: 100%;
+    height: fit-content;
     color: white;
     padding-top: 10px;
     padding-bottom: 40px;
@@ -142,6 +143,7 @@ section.product-section {
 .portability-img {
     display: block;
     width: 90%;
+    height: fit-content;
     margin: 0 auto;
 }
 .product-info {
@@ -157,6 +159,7 @@ img.relic-web-home {
 }
 .detail-box {
     max-width: 40%;
+    letter-spacing: 0.5px;
 }
 .line-1 {
     border-bottom: 0.5px solid #efefef;
@@ -464,8 +467,10 @@ img.volta-img {
     align-items: flex-end;
 }
 .left-content img.relic-table {
-    width: 100px;
-    height: 115px;
+    width: 140px;
+    height: 185px;
+    margin-bottom: -10px;
+    margin-right: 30px;
 }
 .right-content {
     border-bottom-right-radius: 40px;
@@ -476,8 +481,8 @@ img.volta-img {
     align-items: flex-end;
 }
 .right-content img.relic-table {
-    width: 100px;
-    height: 245px;
+    height: 425px;
+    margin-right: 40px;
 }
 .specs {
     height: 100%;
@@ -488,11 +493,12 @@ img.volta-img {
     align-items: flex-start;
 }
 .specs img.one-table {
-    width: 70%;
-    margin-top: -15px;
+    width: 80%;
+    margin-top: -20px;
+    /*     font-family: 'Aeonik Regular', sans-serif; */
 }
 .specs img.volta-table {
-    width: 60%;
+    width: 80%;
 }
 .specs p:nth-last-child(even) {
     font-weight: bold;
@@ -501,6 +507,7 @@ img.volta-img {
 }
 .specs p:nth-last-child(odd) {
     font-size: 16px;
+    color: #666666;
 }
 
 /* Section 5 */
@@ -562,16 +569,10 @@ img.volta-img {
     margin-top: 180px;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
 }
 .member-card {
     text-align: center;
-}
-/* .member-card:nth-last-child(1):nth-child(odd) {
-    grid-column: 2 / 4;
-} */
-.member-card:nth-last-child(1):nth-child(even) {
-    grid-column: 2 / 3;
 }
 .member-card h3 {
     font-size: 55px;
@@ -580,6 +581,10 @@ img.volta-img {
 .member-card p {
     font-size: 24px;
     margin: 30px 0;
+    color: #666666;
+}
+.member-card .position {
+    color: #000000 !important;
 }
 
 /* Section 7 */
@@ -614,6 +619,10 @@ img.volta-img {
 .advisor-card p {
     font-size: 24px;
     margin: 30px 0;
+    color: #666666;
+}
+.advisor-card .position {
+    color: #000000;
 }
 .advisor-card .advisor-tag {
     width: 70%;
@@ -722,12 +731,11 @@ a.contact-mail {
     justify-content: flex-start;
     margin-bottom: 5px;
 }
-.contact-info div span:nth-child(2) {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
+.contact-info div span {
+    width: 50%;
+    text-align: left;
 }
+
 .rights {
     font-size: 21px;
 }
@@ -769,6 +777,7 @@ a.contact-mail {
     .sub-navigation .desc-2 {
         margin: 40px 0;
         font-size: 45px;
+        line-height: 100%;
     }
     .sub-navigation .desc-box .sub-icons {
         width: 100%;
