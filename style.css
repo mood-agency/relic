@@ -243,10 +243,10 @@ img.relic-web-home {
 .line-4 span p:nth-child(2) {
     font-size: 40px;
 }
-.line-4 span p:nth-child(3) {
+/* .line-4 span p:nth-child(3) {
     font-size: 12px;
     margin-bottom: 15px;
-}
+} */
 
 .product-extra {
     margin-top: 150px;
@@ -592,17 +592,20 @@ img.volta-img {
 }
 .member-card {
     text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 25px 15px;
 }
 .member-card img {
     width: 50%;
 }
 .member-card h3 {
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: -30px;
     font-family: 'Aeonik Bold';
 }
 .member-card p {
-    font-size: 18px;
+    font-size: 15px;
     margin: 30px 0;
     color: #666666;
 }
@@ -610,7 +613,10 @@ img.volta-img {
     color: #000000 !important;
     font-family: 'Aeonik Medium';
 }
-
+.linkedin-link img {
+    width: 36px;
+    margin-bottom: 0;
+}
 /* Section 7 */
 
 .advisors-section {
@@ -690,7 +696,7 @@ footer.footer {
 
 /* Footer section 2 */
 .newsletter-section h3 {
-    font-size: 34px;
+    font-size: 32px;
     margin-bottom: 60px;
 }
 .form-inputs {
@@ -706,12 +712,15 @@ footer.footer {
     padding: 10px 0;
     border-right: 1px solid #efefef;
     font-size: 21px;
+    font-family: 'Aeonik Medium';
 }
 .email-input::placeholder {
     font-size: 21px;
     color: #efefef;
+    font-family: 'Aeonik Medium';
 }
 .form-submit {
+    font-family: 'Aeonik Medium';
     all: unset;
     margin-right: 60px;
     margin-left: 40px;
@@ -728,7 +737,7 @@ footer.footer {
     width: 100%;
 }
 .contact-section h5 {
-    font-size: 34px;
+    font-size: 32px;
 }
 .contact-info {
     width: 100%;
