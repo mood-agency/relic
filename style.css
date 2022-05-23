@@ -32,7 +32,7 @@ header.header {
     width: 100%;
     min-height: 100vh;
     padding: 1rem;
-    background-image: url('/assets/images/roberto-nickson-5JOMpgzPDK4-unsplash-min.jpg');
+    background-image: url('/assets/images/roberto-nickson-5JOMpgzPDK4-unsplash-min.png');
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -138,6 +138,7 @@ section.product-section {
 .product-header img {
     width: 20%;
     margin-left: 15px;
+    margin-top: 15px;
 }
 .product-header div p {
     color: #ffffff;
@@ -318,7 +319,7 @@ img.ports-buttons {
 }
 .sub-product-section .product-header div img {
     width: 20%;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 .sub-product-section .product-header div p {
     color: #1a1a1a !important;
@@ -516,12 +517,11 @@ img.volta-img {
     font-family: 'Aeonik Medium';
 }
 .specs img.one-table {
-    width: 50%;
-    margin-top: -10px;
+    width: 40%;
     /*     font-family: 'Aeonik Regular', sans-serif; */
 }
 .specs img.volta-table {
-    width: 50%;
+    width: 40%;
 }
 .specs p:nth-last-child(even) {
     font-size: 24px;
