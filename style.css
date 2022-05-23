@@ -142,7 +142,7 @@ section.product-section {
 .product-header div p {
     color: #ffffff;
     font-size: 60px;
-    font-family: 'Aeonik Bold';
+    font-family: 'Aeonik Medium';
 }
 .portability-img {
     display: block;
@@ -177,6 +177,7 @@ img.relic-web-home {
 .line-1 p:nth-child(2) {
     font-size: 40px;
     margin-bottom: 5px;
+    font-family: 'Aeonik Bold';
 }
 .line-1 p:nth-child(3) {
     font-size: 12px;
@@ -198,6 +199,7 @@ img.relic-web-home {
 }
 .line-2 span p:nth-child(2) {
     font-size: 40px;
+    font-family: 'Aeonik Bold';
 }
 .line-2 span p:nth-child(3) {
     font-size: 12px;
@@ -222,6 +224,7 @@ img.relic-web-home {
 }
 .line-3 span p:nth-child(2) {
     font-size: 40px;
+    font-family: 'Aeonik Bold';
 }
 .line-3 span p:nth-child(3) {
     font-size: 12px;
@@ -241,7 +244,8 @@ img.relic-web-home {
     font-size: 21px;
 }
 .line-4 span p:nth-child(2) {
-    font-size: 40px;
+    font-size: 30px;
+    font-family: 'Aeonik Bold';
 }
 /* .line-4 span p:nth-child(3) {
     font-size: 12px;
@@ -319,7 +323,7 @@ img.ports-buttons {
 .sub-product-section .product-header div p {
     color: #1a1a1a !important;
     line-height: 100%;
-    font-family: 'Aeonik Bold';
+    font-family: 'Aeonik Medium';
 }
 .back-gen-img {
     display: block;
@@ -366,7 +370,7 @@ img.relic-delta {
     color: #000000;
     font-family: 'Aeonik Medium';
     font-size: 12px;
-    margin-bottom: 15px;
+    /*     margin-bottom: 10px; */
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
@@ -374,12 +378,13 @@ img.relic-delta {
 }
 .subline-2 span {
     width: 33%;
-    height: 50px;
+    height: 40px;
     text-align: center;
+    margin-bottom: 10px;
 }
 .subline-3 {
     color: #000000;
-    margin-bottom: 15px;
+    padding: 5px 0;
     display: inline-flex;
     justify-content: space-between;
     width: 100%;
@@ -387,7 +392,7 @@ img.relic-delta {
 }
 .subline-3 span {
     width: 30%;
-    height: 40px;
+    height: 30px;
     text-align: center;
     border-bottom: 0.5px solid #4d4d4d;
 }
@@ -403,6 +408,7 @@ img.relic-delta {
 }
 .no-line {
     border-bottom: none;
+    margin-top: 10px;
 }
 img.volta-img {
     width: 35%;
@@ -550,11 +556,11 @@ img.volta-img {
     font-family: 'Aeonik Bold';
 }
 .benefits-info .text p:nth-child(2) {
-    font-size: 34px;
+    font-size: 24px;
     margin: 30px 0;
 }
 .benefits-info .text p:nth-child(3) {
-    font-size: 34px;
+    font-size: 24px;
 }
 .benefits-info .grid {
     max-width: 45vw;
@@ -578,7 +584,7 @@ img.volta-img {
     font-family: 'Aeonik Bold';
 }
 .team-description p {
-    font-size: 34px;
+    font-size: 24px;
     margin: 40px 0;
     color: #666666;
 }
@@ -760,6 +766,10 @@ a.contact-mail {
 .media-links img {
     margin: 10px 0;
     margin-right: 10px;
+}
+.media-links .linkedin-media {
+    width: 35px;
+    height: 35px;
 }
 .contact-info .ws {
     color: #efefef;
