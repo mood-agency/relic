@@ -591,15 +591,13 @@ img.volta-img {
 .team-members {
     width: fit-content;
     margin: 0 auto;
-    margin-top: 180px;
+    margin-top: 100px;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 0.5fr);
 }
 .member-card {
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
     padding: 25px 15px;
 }
 .member-card img {
