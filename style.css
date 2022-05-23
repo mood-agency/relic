@@ -255,9 +255,9 @@ img.relic-web-home {
 .product-extra {
     margin-top: 150px;
     text-align: center;
-    font-family: 'Aeonik Bold';
 }
 .product-extra p:nth-child(1) {
+    font-family: 'Aeonik Bold';
     font-size: 35px;
 }
 .product-extra p:nth-child(2) {
