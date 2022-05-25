@@ -153,7 +153,7 @@ section.product-section {
     margin-top: -80px;
 }
 .product-info {
-    padding-top: 190px;
+    padding-top: 90px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -209,6 +209,9 @@ img.relic-web-home {
     font-size: 12px;
     margin-bottom: 15px;
 }
+.line-2 span p:nth-child(2) span {
+    font-size: 30px;
+}
 .line-3 {
     color: #efefef;
     margin-bottom: 15px;
@@ -234,6 +237,9 @@ img.relic-web-home {
     font-size: 12px;
     margin-bottom: 15px;
 }
+.line-3 span p:nth-child(2) span {
+    font-size: 30px;
+}
 .line-4 {
     color: #efefef;
     margin-bottom: 15px;
@@ -252,7 +258,7 @@ img.relic-web-home {
     font-family: 'Aeonik Bold';
 }
 .line-4 span p:nth-child(2) span {
-    font-size: 40px;
+    font-size: 30px;
 }
 /* .line-4 span p:nth-child(3) {
     font-size: 12px;
@@ -260,7 +266,7 @@ img.relic-web-home {
 } */
 
 .product-extra {
-    margin-top: 150px;
+    margin-top: 80px;
     text-align: center;
 }
 .product-extra p:nth-child(1) {
@@ -318,6 +324,9 @@ img.relic-web-home {
 /* Section 3 */
 .sub-product-section {
     padding-top: 20px;
+}
+.sub-product-section .product-header div:nth-child(2) {
+    width: 90%;
 }
 .sub-product-section .product-header div img {
     align-items: flex-start;
@@ -383,7 +392,7 @@ img.relic-delta {
     border-bottom: 0.5px solid #4d4d4d;
 }
 .subline-2 span {
-    width: 33%;
+    width: 49%;
     height: 40px;
     text-align: center;
     margin-bottom: 10px;
@@ -397,7 +406,7 @@ img.relic-delta {
     font-family: 'Aeonik Medium';
 }
 .subline-3 span {
-    width: 30%;
+    width: 49%;
     height: 30px;
     text-align: center;
     border-bottom: 0.5px solid #4d4d4d;
@@ -409,9 +418,9 @@ img.relic-delta {
 .subline-3 span:nth-child(2) p {
     font-size: 21px;
 }
-.subline-3 span:nth-child(3) p {
+/* .subline-3 span:nth-child(3) p {
     font-size: 21px;
-}
+} */
 .no-line {
     border-bottom: none;
     margin-top: 10px;
@@ -550,7 +559,7 @@ img.volta-img {
     display: grid;
     gap: 15px;
     grid-template-columns: 0.7fr 1fr;
-    align-self: center;
+    align-items: center;
 }
 .benefits-info .text {
     color: #ffffff;
@@ -646,7 +655,7 @@ img.volta-img {
     margin-top: 150px;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 }
 .advisor-card {
     text-align: center;
@@ -874,15 +883,16 @@ a.contact-mail {
     /* Section 2 */
     section.product-section {
         padding-top: 15px;
+        padding-right: 15px;
     }
     /*     .product-header {
         width: 100%;
         display: inline-flex;
         align-items: flex-start;
     } */
-    /*     .product-header div {
-        width: 50%;
-    } */
+    .product-header div:nth-child(2) {
+        width: 60%;
+    }
     .product-header img {
         width: 40%;
         margin-left: 15px;
@@ -921,12 +931,23 @@ a.contact-mail {
     .line-2 span p:nth-child(2) {
         font-size: 35px;
     }
+    .line-2 span p:nth-child(2) span {
+        font-size: 20px;
+    }
 
     .line-3 span p:nth-child(1) {
         font-size: 18px;
     }
     .line-3 span p:nth-child(2) {
         font-size: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .line-3 span p:nth-child(2) span {
+        font-size: 20px;
+        margin-left: 8px;
+        margin-bottom: 5px;
     }
     .line-4 span {
         width: 45%;
@@ -936,6 +957,9 @@ a.contact-mail {
     }
     .line-4 span p:nth-child(2) {
         font-size: 25px;
+    }
+    .line-4 span p:nth-child(2) span {
+        font-size: 20px;
     }
     .product-extra {
         margin-top: 50px;
@@ -1033,22 +1057,22 @@ a.contact-mail {
         width: 100%;
         border-bottom: 0.5px solid #4d4d4d;
     }
-    .subline-2 span {
+    /* .subline-2 span {
         width: 33%;
         height: 40px;
         text-align: center;
         margin-bottom: 10px;
-    }
-    .subline-3 {
+    } */
+    /* .subline-3 {
         color: #000000;
         padding: 5px 0;
         display: inline-flex;
         justify-content: space-between;
         width: 100%;
         font-family: 'Aeonik Medium';
-    }
+    } */
     .subline-3 span {
-        width: 30%;
+        width: 49%;
         height: 30px;
         text-align: center;
         border-bottom: 0.5px solid #4d4d4d;
