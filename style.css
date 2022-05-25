@@ -429,6 +429,7 @@ img.volta-img {
     width: 35%;
 }
 .consulting-2 {
+    width: 100%;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
@@ -666,23 +667,26 @@ img.volta-img {
     text-align: center;
     margin-top: 150px;
     display: grid;
-    gap: 15px;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-columns: repeat(3, 0.4fr);
+    align-content: center;
+    justify-content: center;
 }
 .advisor-card {
     text-align: center;
+    padding: 25px 5px;
 }
 .advisor-card img {
-    width: 50%;
+    width: 40%;
 }
 .advisor-card h3 {
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: -30px;
-    margin-top: 40px;
     font-family: 'Aeonik Bold';
+    margin-top: 40px;
 }
 .advisor-card p {
-    font-size: 18px;
+    font-size: 15px;
     margin: 30px 0;
     color: #666666;
 }
