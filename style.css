@@ -313,9 +313,9 @@ img.relic-web-home {
 .consult-button {
     all: unset;
     padding: 10px 25px;
-    border: 1px solid #efefef;
+    background-color: #6633ff;
     border-radius: 20px;
-    color: #efefef;
+    color: #000000;
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
@@ -442,9 +442,9 @@ img.relic-delta {
     width: 45%;
     all: unset;
     padding: 10px 15px;
-    border: 1px solid #231f20;
+    background-color: #6633ff;
     border-radius: 20px;
-    color: #231f20;
+    color: #f7f7f7;
     cursor: pointer;
     font-size: 16px;
     text-align: center;
@@ -709,7 +709,7 @@ footer.footer {
     padding: 60px 20px;
     display: grid;
     gap: 10px;
-    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-columns: 0.6fr 1.5fr 1fr;
     justify-items: center;
     color: #efefef;
 }
