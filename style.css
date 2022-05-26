@@ -425,9 +425,7 @@ img.relic-delta {
     border-bottom: none;
     margin-top: 10px;
 }
-img.volta-img {
-    width: 35%;
-}
+
 .consulting-2 {
     width: 100%;
     display: inline-flex;
@@ -436,14 +434,20 @@ img.volta-img {
     align-items: center;
     margin-top: 40px;
 }
+.volta-img {
+    width: 35%;
+    margin-right: 20px;
+}
 .consult-button-2 {
+    width: 45%;
     all: unset;
-    padding: 10px 25px;
+    padding: 10px 15px;
     border: 1px solid #231f20;
     border-radius: 20px;
     color: #231f20;
     cursor: pointer;
     font-size: 16px;
+    text-align: center;
 }
 .text-list {
     width: 100%;
@@ -1117,6 +1121,8 @@ a.contact-mail {
     }
     .consult-button-2 {
         margin-top: 40px;
+        width: 65%;
+        padding: 10px 25px;
     }
     .text-list {
         width: 90%;
@@ -1458,5 +1464,17 @@ a.contact-mail {
     .rights {
         font-size: 16px;
         margin-top: 20px;
+    }
+}
+
+/* Footer Large desktop */
+@media only screen and (min-width: 1526px) {
+    footer.footer {
+        padding: 40px 15vw;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1) {
+    footer.footer {
+        padding: 40px 15vw;
     }
 }
