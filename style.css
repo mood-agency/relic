@@ -85,6 +85,129 @@ nav {
 .sub-navigation .header-text {
     display: none;
 }
+
+/* Nav bar Toggler */
+#nav-toggler {
+    display: none;
+}
+.nav-toggler {
+    position: absolute;
+    top: 1rem;
+    right: 2%;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1000;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    cursor: pointer;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+
+.hamburger::before {
+    content: '';
+    margin-top: -8px;
+}
+
+.hamburger::after {
+    content: '';
+    margin-top: 8px;
+}
+
+#nav-toggler:checked + .nav-toggler .hamburger::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+
+#nav-toggler:checked + .nav-toggler .hamburger {
+    background: rgba(255, 255, 255, 0);
+}
+
+#nav-toggler:checked + .nav-toggler .hamburger::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+#nav-toggler:checked + .nav-toggler + div.navigation-box {
+    transform: translateY(100%);
+}
+/* Deployed Nav Bar */
+
+.navigation-box {
+    min-height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000000;
+    position: absolute;
+    top: -100%;
+    transform: translateY(-100%);
+    transition: transform 380ms ease-in, top 1s;
+}
+.top-nav {
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1.75fr 1.45fr 0.1fr;
+}
+.top-nav .navigation-links {
+    min-height: 50vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.top-nav .navigation-links ul.section-nav {
+    list-style: none;
+    font-size: 35px;
+    line-height: 100%;
+    margin-bottom: 10vh;
+    display: block;
+    width: fit-content;
+}
+.top-nav .nav-mail {
+    font-size: 25px;
+    max-width: 60%;
+}
+label {
+}
+.top-nav .navigation-links ul.section-nav li {
+    display: block;
+    height: fit-content;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: fit-content;
+}
+.top-nav .navigation-links ul.section-nav li::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 1.8px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    transition: all 0.2s ease-in;
+}
+.top-nav .navigation-links ul.section-nav li:hover::after {
+    width: 100%;
+}
+
+.bottom-nav {
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1.75fr 1.45fr 0.1fr;
+    grid-template-columns: 1.75fr 1.15fr 0.4fr;
+}
+.bottom-nav p {
+    color: #ffffff;
+    display: grid;
+    font-size: 22px;
+}
 /* Main content */
 
 /* Section 1 */
@@ -672,7 +795,7 @@ img.relic-delta {
     margin-top: 150px;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(3, 0.3fr);
+    grid-template-columns: repeat(4, 0.3fr);
     align-content: center;
     justify-content: center;
 }
@@ -876,6 +999,80 @@ a.contact-mail {
     }
     .sub-navigation .desc-box .sub-icons img {
         width: auto;
+    }
+
+    /* Nav bar Toggler */
+    .nav-toggler {
+        position: absolute;
+        top: 0.8rem;
+        right: 1.5rem;
+        padding: 1rem;
+    }
+    #nav-toggler:checked + .nav-toggler + div.navigation-box {
+        transform: translateY(0%);
+    }
+
+    /* Deployed Nav Bar */
+    .navigation-box {
+        padding: 0.6rem;
+        min-height: fit-content;
+        top: 0;
+    }
+    .top-nav {
+        color: #ffffff;
+        display: block;
+    }
+    .top-nav .navigation-links {
+        display: block;
+        min-height: fit-content !important;
+    }
+    .top-nav .navigation-links ul.section-nav {
+        list-style: none;
+        font-size: 25px;
+        line-height: 100%;
+        margin-bottom: 60px;
+        margin-top: 90px;
+        display: block;
+        width: 100%;
+    }
+    .top-nav .nav-mail {
+        font-size: 18px;
+        max-width: 60%;
+        margin: 30px auto;
+    }
+    label {
+    }
+    .top-nav .navigation-links ul.section-nav li {
+        display: block;
+        height: fit-content;
+        margin-bottom: 20px;
+        cursor: pointer;
+        width: fit-content;
+        margin: 25px auto;
+    }
+    .top-nav .navigation-links ul.section-nav li::after {
+        content: '';
+        display: block;
+        width: 0%;
+        height: 1.8px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        transition: all 0.2s ease-in;
+    }
+    .top-nav .navigation-links ul.section-nav li:hover::after {
+        width: 100%;
+    }
+
+    .bottom-nav {
+        color: #ffffff;
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.5fr;
+        margin-top: 85px;
+        margin-bottom: 0.6rem;
+    }
+    .bottom-nav p {
+        color: #ffffff;
+        font-size: 12px;
     }
 
     /* Main Content */
