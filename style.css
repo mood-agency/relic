@@ -1114,10 +1114,12 @@ a.contact-mail {
     }
     img.volta-img {
         width: 45%;
+        margin-right: 0px;
     }
     .consulting-2 {
         display: flex;
         flex-direction: column;
+        align-items: center;
         margin-top: 90px;
     }
     .consult-button-2 {
@@ -1353,6 +1355,7 @@ a.contact-mail {
         padding: 40px 20px;
         gap: 15px;
         grid-template-columns: 1fr;
+        justify-items: flex-start;
     }
 
     /* Footer Section 1 */
