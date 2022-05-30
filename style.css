@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth !important;
+}
 
 /* Fonts */
 @font-face {
@@ -121,6 +124,9 @@ nav {
     margin-top: 8px;
 }
 
+#nav-toggler:checked + .nav-toggler {
+    /* position: fixed; */
+}
 #nav-toggler:checked + .nav-toggler .hamburger::before {
     margin-top: 0px;
     transform: rotate(405deg);
@@ -136,6 +142,7 @@ nav {
 }
 #nav-toggler:checked + .nav-toggler + div.navigation-box {
     transform: translateY(100%);
+    /* position: fixed; */
 }
 /* Deployed Nav Bar */
 
@@ -150,7 +157,7 @@ nav {
     position: absolute;
     top: -100%;
     transform: translateY(-100%);
-    transition: transform 380ms ease-in, top 1s;
+    transition: all 380ms ease-in, top 1s;
 }
 .top-nav {
     color: #ffffff;
@@ -183,6 +190,10 @@ label {
     margin-bottom: 20px;
     cursor: pointer;
     width: fit-content;
+}
+.top-nav .navigation-links ul.section-nav li a {
+    text-decoration: none;
+    color: unset;
 }
 .top-nav .navigation-links ul.section-nav li::after {
     content: '';
@@ -291,7 +302,7 @@ img.relic-web-home {
     letter-spacing: 0.5px;
 }
 .line-1 {
-    border-bottom: 0.5px solid #efefef;
+    border-bottom: 0.5px solid #4d4d4d;
     color: #efefef;
     margin-bottom: 15px;
 }
@@ -304,7 +315,7 @@ img.relic-web-home {
     font-family: 'Aeonik Bold';
 }
 .line-1 p:nth-child(3) {
-    font-size: 12px;
+    font-size: 13px;
     margin: 15px 0;
 }
 .line-2 {
@@ -316,7 +327,10 @@ img.relic-web-home {
 }
 .line-2 span {
     width: 45%;
-    border-bottom: 0.5px solid #efefef;
+    border-bottom: 0.5px solid #4d4d4d;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
 }
 .line-2 span p:nth-child(1) {
     font-size: 21px;
@@ -324,17 +338,24 @@ img.relic-web-home {
 .line-2 span p:nth-child(2) {
     font-size: 40px;
     font-family: 'Aeonik Bold';
+    /*  display: inherit;
+    flex-direction: row !important;
+    align-items: flex-end; */
 }
 .line-2 span p:nth-child(2) span {
     border-bottom: none;
+    margin-bottom: 3px;
+    margin-left: 5px;
 }
 .line-2 span p:nth-child(3) {
-    font-size: 12px;
+    font-family: 'Aeonik Bold';
+    font-size: 30px;
     margin-bottom: 15px;
 }
-.line-2 span p:nth-child(2) span {
+/* .line-2 span p:nth-child(2) span {
     font-size: 30px;
-}
+} */
+
 .line-3 {
     color: #efefef;
     margin-bottom: 15px;
@@ -344,7 +365,7 @@ img.relic-web-home {
 }
 .line-3 span {
     width: 45%;
-    border-bottom: 0.5px solid #efefef;
+    border-bottom: 0.5px solid #4d4d4d;
 }
 .line-3 span:nth-child(1) {
     border-bottom: none;
@@ -357,12 +378,13 @@ img.relic-web-home {
     font-family: 'Aeonik Bold';
 }
 .line-3 span p:nth-child(3) {
-    font-size: 12px;
-    margin-bottom: 15px;
-}
-.line-3 span p:nth-child(2) span {
     font-size: 30px;
+    margin-bottom: 15px;
+    font-family: 'Aeonik Bold';
 }
+/* .line-3 span p:nth-child(2) span {
+    font-size: 30px;
+} */
 .line-4 {
     color: #efefef;
     margin-bottom: 15px;
@@ -380,13 +402,18 @@ img.relic-web-home {
     font-size: 30px;
     font-family: 'Aeonik Bold';
 }
-.line-4 span p:nth-child(2) span {
-    font-size: 30px;
+.line-4 span:nth-child(2) p:nth-child(2) {
+    font-size: 40px;
+    font-family: 'Aeonik Bold';
 }
-/* .line-4 span p:nth-child(3) {
-    font-size: 12px;
-    margin-bottom: 15px;
+/* .line-4 span p:nth-child(2) span {
+    font-size: 30px;
 } */
+.line-4 span p:nth-child(3) {
+    font-family: 'Aeonik Bold';
+    font-size: 30px;
+    margin-bottom: 15px;
+}
 
 .product-extra {
     margin-top: 80px;
@@ -399,6 +426,7 @@ img.relic-web-home {
 .product-extra p:nth-child(2) {
     font-size: 35px;
     margin-bottom: 80px;
+    font-family: 'Aeonik Light';
 }
 .product-extra img.solar-panels {
     width: 70%;
@@ -484,7 +512,7 @@ img.relic-web-home {
     align-items: flex-end;
 }
 img.relic-delta {
-    width: 25%;
+    width: 22%;
 }
 .subline-1 {
     border-bottom: 0.5px solid #4d4d4d;
@@ -501,8 +529,9 @@ img.relic-delta {
     font-family: 'Aeonik Bold';
 }
 .subline-1 p:nth-child(3) {
-    font-size: 14px;
+    font-size: 13px;
     margin: 15px 0;
+    font-family: 'Aeonik Regular';
 }
 .subline-2 {
     color: #000000;
@@ -628,24 +657,25 @@ img.relic-delta {
     display: inherit;
     justify-content: space-between;
     align-items: flex-end;
-    /*     margin-left: 40px; */
 }
 .left-content .left-side-images {
+    height: fit-content;
     display: inherit;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .left-content img.relic-table-one {
     width: 195px;
-    height: 125px;
+    height: 135px;
+    transform: rotate(90deg);
+    margin-bottom: 37px;
 }
 .left-content img.relic-table {
     width: 145px;
     height: 185px;
-    margin-bottom: -10px;
-    margin-right: 30px;
+    margin-bottom: 40px;
 }
 .right-content {
     border-bottom-right-radius: 40px;
@@ -654,7 +684,6 @@ img.relic-delta {
     display: inherit;
     justify-content: space-between;
     align-items: flex-end;
-    /*     margin-right: 40px; */
 }
 .right-content img.relic-table {
     height: 425px;
@@ -1371,19 +1400,19 @@ a.contact-mail {
         display: inherit;
         flex-direction: column;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
         margin-right: 15px;
     }
 
     .left-content img.relic-table-one {
         width: 165px;
-        height: 95px;
+        height: 125px;
     }
     .left-content img.relic-table {
         width: 140px;
         height: 185px;
-        margin-bottom: -10px;
-        margin-right: 30px;
+        /*         margin-bottom: -10px; */
+        /*         margin-right: 30px; */
     }
     .right-content {
         width: 100%;
