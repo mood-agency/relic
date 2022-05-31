@@ -94,8 +94,8 @@ nav {
     display: none;
 }
 .nav-toggler {
-    position: absolute;
-    top: 1rem;
+    position: fixed;
+    top: 1.3rem;
     right: 2%;
     padding: 1rem;
     cursor: pointer;
@@ -123,10 +123,6 @@ nav {
     content: '';
     margin-top: 8px;
 }
-
-#nav-toggler:checked + .nav-toggler {
-    /* position: fixed; */
-}
 #nav-toggler:checked + .nav-toggler .hamburger::before {
     margin-top: 0px;
     transform: rotate(405deg);
@@ -142,11 +138,13 @@ nav {
 }
 #nav-toggler:checked + .nav-toggler + div.navigation-box {
     transform: translateY(100%);
-    /* position: fixed; */
+    /*     position: fixed; */
 }
+
 /* Deployed Nav Bar */
 
 .navigation-box {
+    z-index: 999;
     min-height: 100vh;
     width: 100%;
     padding: 1rem;
@@ -154,7 +152,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     background-color: #000000;
-    position: absolute;
+    position: fixed;
     top: -100%;
     transform: translateY(-100%);
     transition: all 380ms ease-in, top 1s;
@@ -219,6 +217,33 @@ label {
     display: grid;
     font-size: 22px;
 }
+
+/* Scroll Bar */
+.scroll-bar {
+    z-index: 2;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    background: rgba(103, 103, 103, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    visibility: hidden;
+}
+.scrollbar-visible {
+    visibility: visible;
+    animation: appear 200ms ease-in 0s;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* Main content */
 
 /* Section 1 */
@@ -727,8 +752,8 @@ img.relic-delta {
     margin: 0 auto;
     display: grid;
     gap: 15px;
-    grid-template-columns: 0.7fr 1fr;
-    align-items: center;
+    grid-template-columns: 0.65fr 2fr;
+    align-items: flex-start;
 }
 .benefits-info .text {
     color: #ffffff;
@@ -777,7 +802,9 @@ img.relic-delta {
     margin-top: 100px;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(4, 0.4fr);
+    grid-template-columns: repeat(4, 0.75fr);
+    align-content: center;
+    justify-content: center;
 }
 .member-card {
     text-align: center;
@@ -1032,10 +1059,11 @@ a.contact-mail {
 
     /* Nav bar Toggler */
     .nav-toggler {
-        position: absolute;
-        top: 0.8rem;
+        position: fixed;
+        top: 1rem;
         right: 1.5rem;
         padding: 1rem;
+        z-index: 1000 !important;
     }
     #nav-toggler:checked + .nav-toggler + div.navigation-box {
         transform: translateY(0%);
@@ -1102,6 +1130,32 @@ a.contact-mail {
     .bottom-nav p {
         color: #ffffff;
         font-size: 12px;
+    }
+
+    /* Scroll Bar */
+    .scroll-bar {
+        z-index: 2;
+        top: 0;
+        position: fixed;
+        width: 100%;
+        padding: 0.6rem;
+        background: rgba(103, 103, 103, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(5px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        visibility: hidden;
+    }
+    .scrollbar-visible {
+        visibility: visible;
+        animation: appear 200ms ease-in 0s;
+    }
+    @keyframes appear {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 
     /* Main Content */
@@ -1707,4 +1761,12 @@ a.contact-mail {
     footer.footer {
         padding: 40px 15vw;
     }
+}
+
+/* Animation section */
+.animate__animated.animate__fadeIn {
+    --animate-duration: 2000ms;
+}
+.animate__animated .animate__fadeInUp {
+    --animate-duration: 500ms;
 }

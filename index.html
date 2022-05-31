@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Relic</title>
 </head>
 
@@ -133,6 +136,11 @@
         </div>
     </div>
 
+    <!-- Scrolled Nav Bar -->
+    <div class="scroll-bar" id="scroll-bar">
+        <img src="/assets/images/Relic.svg" alt="main-logo" class="main-logo">
+    </div>
+
     <!-- Main landing content -->
     <main>
         <!-- Section 1 -->
@@ -163,7 +171,7 @@
                     </p>
                 </div>
             </div>
-            <img src="/assets/images/Portabilidad.png" alt="portability" class="portability-img">
+            <img src="/assets/images/Portabilidad.png" alt="portability" class="portability-img" id="p-img">
             <div class="product-info">
                 <img src="/assets/images/relic_web_home-compress.png" alt="relic-web-home" class="relic-web-home">
                 <div class="detail-box">
@@ -246,14 +254,14 @@
                     <span>
                         <img src="/assets/images/Puertos y botones-3.png" alt="port-item">
                         <p>
-                            2 Puertos USB -C. <br>
-                            3 Puertos USB -A 5V 500mA.
+                            1 puerto USB -C. <br>
+                            3 Puertos USB -A
                         </p>
                     </span>
                     <span>
                         <img src="/assets/images/Puertos y botones-4.png" alt="port-item">
                         <p>
-                            Potencia máxima para <br> el inversor de 200W,<br> con potencia pico de 400W
+                            Dos salidas para 110v - 60hz
                         </p>
                     </span>
                 </div>
@@ -275,13 +283,13 @@
                     </p>
                 </div>
             </div>
-            <img src="/assets/images/Respaldo y generacion.png" alt="back-gen" class="back-gen-img">
+            <img src="/assets/images/Respaldo y generacion.png" alt="back-gen" class="back-gen-img" id="backg-img">
         </section>
         <!-- Section 4 -->
         <section class="product-2-section">
             <div class="product-2-info">
                 <img src="/assets/images/relic_delta.png" alt="relic-delta" class="relic-delta">
-                <div class="detail-box">
+                <div class="detail-box" id="detail-box">
                     <div class="subline-1">
                         <p>Autonomía</p>
                         <p>24H / 365D /</p>
@@ -480,13 +488,13 @@
                         Beneficios <br>
                         inmediatos
                     </p>
-                    <!-- <p>
+                    <p>
                         One® y Volta® son Generadores <br> que almacenan energía <br> mediante carga solar
                         o de <br> la red electrica.
-                    </p> -->
-                    <!-- <p>
+                    </p>
+                    <p>
                         Ambos están en capacidad <br> de mantener sus equipos <br> en funcionamiento durante <br> días.
-                    </p> -->
+                    </p>
                 </div>
                 <img src="/assets/images/grilla con textos.png" alt="grid" class="grid">
             </div>
@@ -763,6 +771,7 @@
             <span class="rights">Relic™ 2022 - ∞ , All Rights Reserved.</span>
         </section>
     </footer>
+    <script src="/animations.js"></script>
 </body>
 
 </html>
