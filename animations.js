@@ -37,7 +37,7 @@ $(window).scroll(function () {
     var top_of_screen = $(window).scrollTop();
 
     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
-        $('#p-img').addClass('animate__animated animate__fadeIn animate__delay-2s');
+        $('#p-img').addClass('animate__animated animate__fadeIn animate__delay-1s');
     } /* else {
         $('#p-img').removeClass('animate__animated animate__fadeIn');
     } */
