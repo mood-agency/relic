@@ -893,7 +893,10 @@ img.relic-delta {
 .advisor-card .advisor-tag {
     width: 50%;
 }
-
+.advisor-card .linkedin-link img {
+    width: 36px;
+    margin-bottom: -8px;
+}
 /* Footer Content */
 footer.footer {
     background-color: #1a1a1a;
@@ -1016,6 +1019,10 @@ a.contact-mail {
 .contact-info div span {
     width: 50%;
     text-align: left;
+}
+.contact-info div span a {
+    text-decoration: none;
+    color: unset;
 }
 
 .rights {
