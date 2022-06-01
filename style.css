@@ -225,10 +225,11 @@ label {
     position: fixed;
     width: 100%;
     padding: 1rem;
-    background: rgba(103, 103, 103, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* background: rgba(103, 103, 103, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(5px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    background-color: #000000 !important;
     visibility: hidden;
 }
 .scrollbar-visible {
@@ -340,7 +341,7 @@ img.relic-web-home {
     font-family: 'Aeonik Bold';
 }
 .line-1 p:nth-child(3) {
-    font-size: 13px;
+    font-size: 16px;
     margin: 15px 0;
 }
 .line-2 {
@@ -456,6 +457,18 @@ img.relic-web-home {
 .product-extra img.solar-panels {
     width: 70%;
 }
+.solar-panels-image {
+    display: inline-block;
+}
+.solar-panels-image img:nth-child(odd) {
+    width: 20vw;
+    z-index: 3;
+}
+.solar-panels-image img:nth-child(even) {
+    width: 23vw;
+    position: relative;
+    z-index: 5;
+}
 
 .product-details {
     margin: 80px 0;
@@ -554,7 +567,7 @@ img.relic-delta {
     font-family: 'Aeonik Bold';
 }
 .subline-1 p:nth-child(3) {
-    font-size: 13px;
+    font-size: 16px;
     margin: 15px 0;
     font-family: 'Aeonik Regular';
 }
@@ -607,7 +620,7 @@ img.relic-delta {
     width: 100%;
     display: inline-flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 40px;
 }
@@ -752,7 +765,7 @@ img.relic-delta {
     margin: 0 auto;
     display: grid;
     gap: 15px;
-    grid-template-columns: 0.65fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
     align-items: flex-start;
 }
 .benefits-info .text {
@@ -797,21 +810,21 @@ img.relic-delta {
     color: #666666;
 }
 .team-members {
-    width: fit-content;
+    width: auto;
     margin: 0 auto;
     margin-top: 100px;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(4, 0.75fr);
+    grid-template-columns: repeat(4, 0.2fr);
     align-content: center;
     justify-content: center;
 }
 .member-card {
     text-align: center;
-    padding: 25px 5px;
+    padding: 25px;
 }
 .member-card img {
-    width: 50%;
+    width: 40%;
 }
 .member-card h3 {
     font-size: 25px;
@@ -851,13 +864,13 @@ img.relic-delta {
     margin-top: 150px;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(4, 0.3fr);
+    grid-template-columns: repeat(4, 0.2fr);
     align-content: center;
     justify-content: center;
 }
 .advisor-card {
     text-align: center;
-    padding: 25px 5px;
+    padding: 25px;
 }
 .advisor-card img {
     width: 40%;
@@ -982,6 +995,10 @@ a.contact-mail {
 .media-links .linkedin-media {
     width: 35px;
     height: 35px;
+}
+.media-links .youtube-media {
+    width: 35px;
+    height: 40px;
 }
 .contact-info .ws {
     color: #efefef;
@@ -1139,10 +1156,11 @@ a.contact-mail {
         position: fixed;
         width: 100%;
         padding: 0.6rem;
-        background: rgba(103, 103, 103, 0.3);
+        /* background: rgba(103, 103, 103, 0.3);
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(5px);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+        background-color: #000000 !important;
         visibility: hidden;
     }
     .scrollbar-visible {
@@ -1184,7 +1202,7 @@ a.contact-mail {
     /* Section 2 */
     section.product-section {
         padding-top: 15px;
-        padding-right: 15px;
+        padding-right: 0px;
     }
     /*     .product-header {
         width: 100%;
@@ -1233,7 +1251,7 @@ a.contact-mail {
         font-size: 35px;
     }
     .line-2 span p:nth-child(2) span {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     .line-3 span p:nth-child(1) {
@@ -1246,7 +1264,7 @@ a.contact-mail {
         align-items: flex-end;
     }
     .line-3 span p:nth-child(2) span {
-        font-size: 20px;
+        font-size: 20px !important;
         margin-left: 8px;
         margin-bottom: 5px;
     }
@@ -1260,7 +1278,7 @@ a.contact-mail {
         font-size: 25px;
     }
     .line-4 span p:nth-child(2) span {
-        font-size: 20px;
+        font-size: 20px !important;
     }
     .product-extra {
         margin-top: 50px;
@@ -1274,6 +1292,17 @@ a.contact-mail {
     }
     .product-extra img.solar-panels {
         width: 90%;
+    }
+    .solar-panels-image {
+        text-align: center;
+    }
+    .solar-panels-image img:nth-child(odd) {
+        width: 25vw;
+        z-index: 3;
+    }
+    .solar-panels-image img:nth-child(even) {
+        z-index: 5;
+        width: 29vw;
     }
     .details {
         width: 90%;
@@ -1400,6 +1429,7 @@ a.contact-mail {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
         margin-top: 90px;
     }
     .consult-button-2 {
@@ -1765,7 +1795,7 @@ a.contact-mail {
 
 /* Animation section */
 .animate__animated.animate__fadeIn {
-    --animate-duration: 2000ms;
+    --animate-duration: 1500ms;
 }
 .animate__animated .animate__fadeInUp {
     --animate-duration: 500ms;
