@@ -94,7 +94,7 @@ $(window).scroll(function () {
 
     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
         $('#left-wing').addClass('animate__animated animate__slideInRight animate__delay-1s');
-        $('#center-device').addClass('animate__animated animate__fadeIn animate__faster');
+        /* $('#center-device').addClass('animate__animated animate__fadeIn animate__faster'); */
         $('#right-wing').addClass('animate__animated animate__slideInLeft animate__delay-1s');
     } /* else {
         $('.detail-box').removeClass('animate__animated animate__fadeInRight');
