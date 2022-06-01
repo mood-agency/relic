@@ -824,7 +824,7 @@ img.relic-delta {
     padding: 25px;
 }
 .member-card img {
-    width: 40%;
+    width: 60%;
 }
 .member-card h3 {
     font-size: 25px;
@@ -873,7 +873,7 @@ img.relic-delta {
     padding: 25px;
 }
 .advisor-card img {
-    width: 40%;
+    width: 60%;
 }
 .advisor-card h3 {
     font-size: 25px;
@@ -1600,7 +1600,7 @@ a.contact-mail {
         padding: 15px 35px;
     }
     .member-card img {
-        width: 30%;
+        width: 40%;
     }
     .member-card h3 {
         font-size: 25px;
@@ -1799,4 +1799,7 @@ a.contact-mail {
 }
 .animate__animated .animate__fadeInUp {
     --animate-duration: 500ms;
+}
+.animate__animated.animate__fadeInRight {
+    -o-animation-duration: 1500ms;
 }

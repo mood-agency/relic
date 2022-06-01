@@ -1,3 +1,22 @@
+/* Nav Bar closing gather */
+
+
+$("#anchor").click(function () {
+    $("#nav-toggler").prop("checked", false);
+});
+$("#anchor-2").click(function () {
+    $("#nav-toggler").prop("checked", false);
+});
+$("#anchor-3").click(function () {
+    $("#nav-toggler").prop("checked", false);
+});
+$("#anchor-4").click(function () {
+    $("#nav-toggler").prop("checked", false);
+});
+$("#anchor-5").click(function () {
+    $("#nav-toggler").prop("checked", false);
+});
+
 /* Js Scroll Bar animation on */
 var scrollBar;
 function yScroll() {
