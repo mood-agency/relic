@@ -220,7 +220,7 @@ label {
 
 /* Scroll Bar */
 .scroll-bar {
-    z-index: 2;
+    z-index: 7;
     top: 0;
     position: fixed;
     width: 100%;
