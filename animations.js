@@ -98,7 +98,7 @@ $(window).scroll(function () {
     var top_of_screen = $(window).scrollTop();
 
     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
-        $('#detail-box').addClass('animate__animated animate__fadeInRight animate__delay-2s');
+        $('#detail-box').addClass('animate__animated animate__fadeInRight animate__delay-2s animate__slow');
     } /* else {
         $('.detail-box').removeClass('animate__animated animate__fadeInRight');
     } */

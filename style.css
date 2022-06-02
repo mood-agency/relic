@@ -929,6 +929,10 @@ footer.footer {
 }
 
 /* Footer section 2 */
+section.newsletter-section {
+    visibility: hidden;
+}
+
 .newsletter-section h3 {
     font-size: 32px;
     margin-bottom: 60px;
