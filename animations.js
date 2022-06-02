@@ -96,12 +96,11 @@ $(window).scroll(function () {
     var bottom_of_element = $("#detail-box").offset().top + $("#detail-box").outerHeight();
     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
     var top_of_screen = $(window).scrollTop();
+    var button;
 
     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
-        $('#detail-box').addClass('animate__animated animate__fadeInRight animate__delay-2s animate__slow');
-    } /* else {
-        $('.detail-box').removeClass('animate__animated animate__fadeInRight');
-    } */
+        $('#detail-box').addClass('animate__animated animate__fadeInRight animate__delay-2s animate__slower');
+    }
 });
 
 /* Animation 6 */
