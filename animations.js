@@ -92,14 +92,13 @@ $(window).scroll(function () {
 
 /* Animation 5 */
 $(window).scroll(function () {
-    var top_of_element = $("#detail-box").offset().top;
-    var bottom_of_element = $("#detail-box").offset().top + $("#detail-box").outerHeight();
+    var top_of_element = $(".relic-delta").offset().top;
+    var bottom_of_element = $(".relic-delta").offset().top + $(".relic-delta").outerHeight();
     var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
     var top_of_screen = $(window).scrollTop();
-    var button;
 
     if ((bottom_of_screen > top_of_element) && (top_of_screen < bottom_of_element)) {
-        $('#detail-box').addClass('animate__animated animate__fadeInRight animate__delay-2s animate__slower');
+        $('#detail-box').addClass('animate__animated animate__fadeInRight animate__delay-1s');
     }
 });
 

@@ -859,12 +859,13 @@ img.relic-delta {
 }
 .advisors {
     width: fit-content;
+    height: fit-content;
     margin: 0 auto;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(4, 0.2fr);
+    grid-template-columns: repeat(4, 0.29fr);
     align-content: center;
     justify-content: center;
 }
@@ -890,12 +891,14 @@ img.relic-delta {
     color: #000000;
     font-family: 'Aeonik Medium';
 }
-.advisor-card .advisor-tag {
-    width: 50%;
+.advisor-card img.advisor-tag {
+    min-width: 200px;
+    height: 70px;
 }
 .advisor-card .linkedin-link img {
     width: 36px;
-    margin-bottom: -8px;
+    margin: 0px auto;
+    margin-top: 17.5px;
 }
 /* Footer Content */
 footer.footer {
