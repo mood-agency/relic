@@ -308,6 +308,8 @@ section.product-section {
 .portability-img {
     display: block;
     width: 90% !important;
+    width: -moz-available;
+    width: -webkit-fill-available;
     height: fit-content;
     margin: 0 auto;
     margin-top: -80px;
@@ -1235,6 +1237,8 @@ a.contact-mail {
     }
     .portability-img {
         width: 95% !important;
+        width: -moz-available;
+        width: -webkit-fill-available;
         margin-top: -10px;
     }
     .product-info {
