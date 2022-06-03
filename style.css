@@ -867,7 +867,7 @@ img.relic-delta {
     margin-top: 100px;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(4, 0.29fr);
+    grid-template-columns: repeat(4, 0.25fr);
     align-content: center;
     justify-content: center;
 }
