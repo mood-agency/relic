@@ -310,7 +310,7 @@ section.product-section {
     width: 90% !important;
     width: -moz-available;
     width: -webkit-fill-available;
-    height: fit-content;
+    height: auto;
     margin: 0 auto;
     margin-top: -80px;
 }
