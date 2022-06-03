@@ -867,7 +867,7 @@ img.relic-delta {
     margin-top: 100px;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(4, 0.25fr);
+    grid-template-columns: repeat(4, 0.2fr);
     align-content: center;
     justify-content: center;
 }
@@ -885,9 +885,18 @@ img.relic-delta {
     margin-top: 40px;
 }
 .advisor-card p {
-    font-size: 15px;
+    font-size: 16px;
     margin: 30px 0;
     color: #666666;
+}
+.advisor-card p a.ad-link {
+    all: unset;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in;
+}
+.advisor-card p a.ad-link:hover {
+    border-bottom: 1.5px solid #666666;
 }
 .advisor-card .position {
     color: #000000;
@@ -906,6 +915,7 @@ img.relic-delta {
     margin: 0px auto;
     margin-top: 17.5px;
 }
+
 /* Footer Content */
 footer.footer {
     background-color: #1a1a1a;
