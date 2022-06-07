@@ -933,9 +933,7 @@ img.relic-delta {
 }
 
 .table {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 70%;
   margin: 0 auto;
   background-color: #000000;
   border-radius: 40px;
