@@ -425,7 +425,7 @@ section.product-section {
   display: block;
   width: 90% !important;
   width: -moz-available;
-  width: -webkit-fill-available;
+  width: -webkit-stretch;
   height: auto;
   margin: 0 auto;
   margin-top: -80px;
@@ -1738,7 +1738,7 @@ a.contact-mail {
   .portability-img {
     width: 95% !important;
     width: -moz-available;
-    width: -webkit-fill-available;
+    width: -webkit-stretch;
     margin-top: -10px;
   }
   .product-info {
@@ -2359,6 +2359,17 @@ a.contact-mail {
             align-items: center;
     margin: 15px 0;
   }
+  .media-links i {
+    background: white;
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    color: black;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 32px;
+  }
   .media-links img {
     margin: 10px 0;
     margin-right: 10px;
@@ -2422,6 +2433,6 @@ a.contact-mail {
 }
 
 .animate__animated.animate__fadeInRight {
-  -o-animation-duration: 1500ms;
+  --animation-duration: 1500ms;
 }
 /*# sourceMappingURL=style.css.map */
