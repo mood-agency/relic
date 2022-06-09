@@ -21,11 +21,14 @@ $("#anchor-5").click(function () {
 var scrollBar;
 function yScroll() {
     scrollBar = $('#scroll-bar');
+    navColor = $('.nav-toggler .hamburger');
     yPos = window.pageYOffset;
     if (yPos === 0) {
         scrollBar.removeClass("scrollbar-visible");
+        navColor.removeClass("darkMenu");
     } else {
         scrollBar.addClass("scrollbar-visible");
+        navColor.addClass("darkMenu");
     }
 }
 window.addEventListener("scroll", yScroll);

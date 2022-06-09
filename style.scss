@@ -113,6 +113,11 @@ nav {
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
 }
+.hamburger.darkMenu,
+.hamburger.darkMenu::before,
+.hamburger.darkMenu::after {
+  background-color: black;
+}
 
 .hamburger::before {
   content: "";
@@ -235,7 +240,14 @@ label {
 .scrollbar-visible {
   visibility: visible;
   animation: appear 200ms ease-in 0s;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.72) !important;
+  img.main-logo {
+    content: url(/assets/images/relic-negro.svg);
+    max-width: 157px;
+  }
 }
+
 @keyframes appear {
   from {
     opacity: 0;
@@ -309,7 +321,7 @@ section.product-section {
   display: block;
   width: 90% !important;
   width: -moz-available;
-  width: -webkit-fill-available;
+  width: -webkit-stretch;
   height: auto;
   margin: 0 auto;
   margin-top: -80px;
@@ -1275,7 +1287,7 @@ a.contact-mail {
   .portability-img {
     width: 95% !important;
     width: -moz-available;
-    width: -webkit-fill-available;
+    width: -webkit-stretch;
     margin-top: -10px;
   }
   .product-info {
