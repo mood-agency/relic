@@ -1604,9 +1604,6 @@ a.contact-mail {
   /* Deployed Nav Bar */
   .navigation-box {
     padding: 0.6rem;
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
     top: 0;
   }
   .top-nav {
