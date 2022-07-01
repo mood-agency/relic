@@ -1870,3 +1870,14 @@ a.contact-mail {
 .animate__animated.animate__fadeInRight {
   -o-animation-duration: 1500ms;
 }
+
+#right-wing,
+#left-wing {
+  opacity: 0;
+}
+.animate__slideInLeft {
+  opacity: 1 !important;
+}
+.animate__slideInRight {
+  opacity: 1 !important;
+}
