@@ -991,7 +991,7 @@ img.relic-delta {
   margin-top: 100px;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(4, 0.2fr);
+  grid-template-columns: repeat(3, 0.2fr);
   align-content: center;
   justify-content: center;
 }
@@ -1055,7 +1055,7 @@ img.relic-delta {
   margin-top: 100px;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(4, 0.2fr);
+  grid-template-columns: repeat(3, 0.2fr);
   align-content: center;
   justify-content: center;
 }
@@ -1298,15 +1298,12 @@ a.contact-mail {
     align-items: flex-start;
     justify-content: flex-start;
   }
-
   .navigation {
     align-items: flex-start;
   }
-
   .navigation .header-text {
     display: none;
   }
-
   /* Nav */
   .sub-navigation {
     display: flex;
@@ -1318,21 +1315,17 @@ a.contact-mail {
     height: fit-content;
     color: #efefef;
   }
-
   .sub-navigation .header-text {
     display: block;
   }
-
   .sub-navigation .desc-1 {
     margin-top: 40px;
   }
-
   .sub-navigation .desc-2 {
     margin: 40px 0;
     font-size: 45px;
     line-height: 100%;
   }
-
   .sub-navigation .desc-box .sub-icons {
     width: 100%;
     margin: 40px 0;
@@ -1341,11 +1334,9 @@ a.contact-mail {
     text-align: center;
     font-size: 12px;
   }
-
   .sub-navigation .desc-box .sub-icons img {
     width: auto;
   }
-
   /* Nav bar Toggler */
   .nav-toggler {
     position: fixed;
@@ -1354,29 +1345,24 @@ a.contact-mail {
     padding: 1rem;
     z-index: 1000 !important;
   }
-
   #nav-toggler:checked + .nav-toggler + div.navigation-box {
     transform: translateY(0%);
   }
-
   /* Deployed Nav Bar */
   .navigation-box {
     padding: 0.6rem;
     top: 0;
   }
-
   .top-nav {
     color: #ffffff;
     display: block;
   }
-
   .top-nav .navigation-links {
     display: block;
     min-height: -webkit-fit-content !important;
     min-height: -moz-fit-content !important;
     min-height: fit-content !important;
   }
-
   .top-nav .navigation-links ul.section-nav {
     list-style: none;
     font-size: 25px;
@@ -1386,13 +1372,11 @@ a.contact-mail {
     display: block;
     width: 100%;
   }
-
   .top-nav .nav-mail {
     font-size: 18px;
     max-width: 60%;
     margin: 30px auto;
   }
-
   .top-nav .navigation-links ul.section-nav li {
     display: block;
     height: -webkit-fit-content;
@@ -1405,7 +1389,6 @@ a.contact-mail {
     width: fit-content;
     margin: 25px auto;
   }
-
   .top-nav .navigation-links ul.section-nav li::after {
     content: "";
     display: block;
@@ -1415,11 +1398,9 @@ a.contact-mail {
     background-color: #ffffff;
     transition: all 0.2s ease-in;
   }
-
   .top-nav .navigation-links ul.section-nav li:hover::after {
     width: 100%;
   }
-
   .bottom-nav {
     color: #ffffff;
     display: grid;
@@ -1427,12 +1408,10 @@ a.contact-mail {
     margin-top: 85px;
     margin-bottom: 0.6rem;
   }
-
   .bottom-nav p {
     color: #ffffff;
     font-size: 12px;
   }
-
   /* Scroll Bar */
   .scroll-bar {
     z-index: 10;
@@ -1446,13 +1425,11 @@ a.contact-mail {
         border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
     visibility: hidden;
   }
-
   .scrollbar-visible {
     visibility: visible;
     -webkit-animation: appear 200ms ease-in 0s;
             animation: appear 200ms ease-in 0s;
   }
-
   @-webkit-keyframes appear {
     from {
       opacity: 0;
@@ -1461,7 +1438,6 @@ a.contact-mail {
       opacity: 1;
     }
   }
-
   @keyframes appear {
     from {
       opacity: 0;
@@ -1477,33 +1453,27 @@ a.contact-mail {
     height: -moz-fit-content;
     height: fit-content;
   }
-
   .intro-box {
     width: 90%;
     margin: 0 auto;
     text-align: center;
   }
-
   .intro-title {
     font-size: 49px;
     margin-top: 25px;
   }
-
   .intro-text-1 {
     font-size: 16px;
   }
-
   .intro-text-2 {
     font-size: 16px;
     margin-bottom: 25px;
   }
-
   /* Section 2 */
   section.product-section {
     padding-top: 15px;
     padding-right: 0px;
   }
-
   /*     .product-header {
         width: 100%;
         display: inline-flex;
@@ -1512,160 +1482,126 @@ a.contact-mail {
   .product-header div:nth-child(2) {
     width: 60%;
   }
-
   .product-header img {
     width: 40%;
     margin-left: 15px;
   }
-
   .product-header div p {
     font-size: 25px;
   }
-
   .portability-img {
     width: 95% !important;
     width: -moz-available;
     width: -webkit-stretch;
     margin-top: -10px;
   }
-
   .product-info {
     padding-top: 80px;
     flex-direction: column;
   }
-
   img.relic-web-home {
     width: 70%;
     margin-right: 0px;
     margin-bottom: 30px;
   }
-
   .detail-box {
     max-width: 90%;
   }
-
   .line-1 p:nth-child(1) {
     font-size: 18px;
   }
-
   .line-1 p:nth-child(2) {
     font-size: 35px;
   }
-
   .line-2 span {
     width: 45%;
   }
-
   .line-2 span p:nth-child(1) {
     font-size: 18px;
   }
-
   .line-2 span p:nth-child(2) {
     font-size: 35px;
   }
-
   .line-2 span p:nth-child(2) span {
     font-size: 20px !important;
   }
-
   .line-3 span p:nth-child(1) {
     font-size: 18px;
   }
-
   .line-3 span p:nth-child(2) {
     font-size: 35px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
-
   .line-3 span p:nth-child(2) span {
     font-size: 20px !important;
     margin-left: 8px;
     margin-bottom: 5px;
   }
-
   .line-4 span {
     width: 45%;
   }
-
   .line-4 span p:nth-child(1) {
     font-size: 18px;
   }
-
   .line-4 span p:nth-child(2) {
     font-size: 25px;
   }
-
   .line-4 span p:nth-child(2) span {
     font-size: 20px !important;
   }
-
   .product-extra {
     margin-top: 50px;
   }
-
   .product-extra p:nth-child(1) {
     font-size: 25px;
   }
-
   .product-extra p:nth-child(2) {
     font-size: 25px;
     margin-bottom: 80px;
   }
-
   .product-extra img.solar-panels {
     width: 90%;
   }
-
   .solar-panels-image {
     text-align: center;
   }
-
   .solar-panels-image img:nth-child(odd) {
     width: 25vw;
     z-index: 3;
   }
-
   .solar-panels-image img:nth-child(even) {
     z-index: 5;
     width: 29vw;
   }
-
   .details {
     width: 90%;
     flex-direction: column;
   }
-
   .details img {
     width: 65%;
     margin-bottom: 10px;
   }
-
   .details p {
     margin-bottom: 30px;
   }
-
   .consulting {
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
   }
-
   .consulting img {
     width: 40%;
     margin-right: 0px;
   }
-
   .consult-button {
     margin-top: 40px;
   }
-
   /* Section 3 */
   .sub-product-section {
     padding-top: 20px;
   }
-
   /*     .sub-product-section .product-header div img {
         align-items: flex-start;
     } */
@@ -1673,55 +1609,45 @@ a.contact-mail {
     width: 40%;
     margin-top: 0px;
   }
-
   .sub-product-section .product-header div p {
     font-size: 25px;
   }
-
   .back-gen-img {
     width: 90%;
     margin-top: -10px;
   }
-
   /* Section 4 */
   .product-2-section {
     padding: 60px 0;
   }
-
   .product-2-info {
     width: 90%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   img.relic-delta {
     width: 65%;
     margin-bottom: 50px;
   }
-
   .subline-1 {
     border-bottom: 0.5px solid #4d4d4d;
     color: #000000;
     margin-bottom: 15px;
     font-family: "Aeonik Medium";
   }
-
   .subline-1 p:nth-child(1) {
     font-size: 18px;
   }
-
   .subline-1 p:nth-child(2) {
     font-size: 30px;
     margin-bottom: 5px;
     font-family: "Aeonik Bold";
   }
-
   .subline-1 p:nth-child(3) {
     font-size: 14px;
     margin: 15px 0;
   }
-
   .subline-2 {
     color: #000000;
     font-family: "Aeonik Medium";
@@ -1731,7 +1657,6 @@ a.contact-mail {
     width: 100%;
     border-bottom: 0.5px solid #4d4d4d;
   }
-
   /* .subline-2 span {
         width: 33%;
         height: 40px;
@@ -1752,30 +1677,24 @@ a.contact-mail {
     text-align: center;
     border-bottom: 0.5px solid #4d4d4d;
   }
-
   .subline-3 span:nth-child(1) p {
     font-family: "Aeonik Bold";
     font-size: 19px;
   }
-
   .subline-3 span:nth-child(2) p {
     font-size: 18px;
   }
-
   .subline-3 span:nth-child(3) p {
     font-size: 18px;
   }
-
   .no-line {
     border-bottom: none;
     margin-top: 10px;
   }
-
   img.volta-img {
     width: 45%;
     margin-right: 0px;
   }
-
   .consulting-2 {
     display: flex;
     flex-direction: column;
@@ -1783,59 +1702,47 @@ a.contact-mail {
     justify-content: space-between;
     margin-top: 90px;
   }
-
   .consult-button-2 {
     margin-top: 40px;
     width: 65%;
     padding: 10px 25px;
   }
-
   .text-list {
     width: 90%;
     margin: 0 auto;
     padding: 90px 0;
   }
-
   .text-list ul li {
     font-size: 20px;
   }
-
   .product-table {
     width: 100%;
   }
-
   .table {
     width: 90%;
     margin: 0 auto;
     background-color: #000000;
     border-radius: 40px;
   }
-
   .table-header {
     padding: 20px;
   }
-
   .table-header p {
     margin: 25px 0;
   }
-
   .table-header p:nth-child(1) {
     font-size: 35px;
   }
-
   .table-header p:nth-child(2) {
     font-size: 18px;
   }
-
   .table-header p:nth-child(3) {
     font-size: 18px;
   }
-
   .table-content {
     display: flex;
     flex-direction: column;
   }
-
   .left-content {
     border-right: none;
     border-bottom: 2px solid #666666;
@@ -1843,7 +1750,6 @@ a.contact-mail {
     align-items: flex-end;
     padding: 30px 15px;
   }
-
   .left-content .left-side-images {
     display: inherit;
     flex-direction: column;
@@ -1851,19 +1757,16 @@ a.contact-mail {
     align-items: center;
     margin-right: 15px;
   }
-
   .left-content img.relic-table-one {
     width: 165px;
     height: 125px;
   }
-
   .left-content img.relic-table {
     width: 140px;
     height: 185px;
     /*         margin-bottom: -10px; */
     /*         margin-right: 30px; */
   }
-
   .right-content {
     width: 100%;
     align-items: flex-end;
@@ -1873,16 +1776,13 @@ a.contact-mail {
     padding: 30px 25px;
     /*     margin-right: 40px; */
   }
-
   .right-content img.relic-table {
     height: 375px;
     margin-right: 25px;
   }
-
   .specs {
     max-height: 600px;
   }
-
   .specs span {
     display: inherit;
     flex-direction: column;
@@ -1890,27 +1790,22 @@ a.contact-mail {
     min-height: 325px;
     position: relative;
   }
-
   .specs img.one-table {
     width: 60%;
     margin-bottom: 30px;
   }
-
   .specs img.volta-table {
     width: 80%;
     margin-bottom: 30px;
   }
-
   .specs p:nth-last-child(even) {
     font-size: 20px;
     margin: 15px 0;
   }
-
   .specs p:nth-last-child(odd) {
     font-size: 16px;
     color: #808080;
   }
-
   .p-right {
     height: -webkit-fit-content;
     height: -moz-fit-content;
@@ -1919,47 +1814,38 @@ a.contact-mail {
     position: absolute;
     bottom: -200px;
   }
-
   /* Section 5 */
   .benefits-section {
     padding: 40px 20px;
   }
-
   .benefits-info {
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr;
   }
-
   .benefits-info .text {
     color: #ffffff;
   }
-
   .benefits-info .text p:nth-child(1) {
     margin-top: 0px;
     font-size: 45px;
   }
-
   .benefits-info .text p:nth-child(2) {
     font-size: 20px;
     margin: 30px 0;
   }
-
   .benefits-info .text p:nth-child(3) {
     font-size: 20px;
   }
-
   .benefits-info .grid {
     max-width: 100%;
     margin-top: 0px;
     margin: 15px auto;
   }
-
   /* Section 6 */
   .team-section {
     padding: 60px 0;
   }
-
   .team-description {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -1967,62 +1853,50 @@ a.contact-mail {
     margin: 0 auto;
     text-align: center;
   }
-
   .team-description h3 {
     font-size: 35px;
     margin-bottom: 40px;
   }
-
   .team-description p {
     font-size: 18px;
     margin: 20px 20px;
     color: #666666;
   }
-
   .team-members {
     margin-top: 60px;
     display: grid;
     gap: 15px;
     grid-template-columns: 1fr;
   }
-
   .member-card {
     padding: 15px 35px;
   }
-
   .member-card img {
     width: 40%;
   }
-
   .member-card h3 {
     font-size: 25px;
     margin-bottom: -20px;
   }
-
   .member-card p {
     font-size: 15px;
     margin: 30px 0;
     color: #666666;
   }
-
   .member-card .position {
     margin-bottom: 20px;
   }
-
   .linkedin-link img {
     width: 36px;
     margin-bottom: 10px;
   }
-
   /* Section 7 */
   .advisors-section {
     padding: 60px 0;
   }
-
   .advisors-section h3 {
     font-size: 35px;
   }
-
   .advisors {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -2034,37 +1908,30 @@ a.contact-mail {
     gap: 15px;
     grid-template-columns: 1fr;
   }
-
   .advisor-card {
     text-align: center;
   }
-
   .advisor-card img {
     width: 40%;
   }
-
   .advisor-card h3 {
     font-size: 25px;
     margin-bottom: -30px;
     margin-top: 40px;
     font-family: "Aeonik Bold";
   }
-
   .advisor-card p {
     font-size: 16px;
     margin: 30px 0;
     color: #666666;
   }
-
   .advisor-card .position {
     color: #000000;
     font-family: "Aeonik Medium";
   }
-
   .advisor-card .advisor-tag {
     width: 35%;
   }
-
   /* Footer Content */
   footer.footer {
     padding: 40px 20px;
@@ -2072,47 +1939,38 @@ a.contact-mail {
     grid-template-columns: 1fr;
     justify-items: flex-start;
   }
-
   /* Footer Section 1 */
   .relic-section {
     margin-bottom: 60px;
   }
-
   .relic-section p {
     font-size: 24px;
     margin: 40px 0;
   }
-
   .relic-section p:nth-child(even) {
     font-family: "Aeonik Bold";
     margin-bottom: 0px;
   }
-
   .relic-section p:nth-child(odd) {
     margin-bottom: 0px;
   }
-
   /* Footer section 2 */
   .newsletter-section {
     display: none;
     width: 100%;
     margin-bottom: 60px;
   }
-
   .newsletter-section h3 {
     font-size: 20px;
     margin-bottom: 40px;
   }
-
   form {
     width: 100%;
   }
-
   .form-inputs {
     width: 100%;
     padding: 5px;
   }
-
   .email-input {
     all: unset;
     padding: 10px;
@@ -2120,19 +1978,15 @@ a.contact-mail {
     font-size: 16px;
     border-right: 1px solid #efefef;
   }
-
   .email-input::-moz-placeholder {
     font-size: 16px;
   }
-
   .email-input:-ms-input-placeholder {
     font-size: 16px;
   }
-
   .email-input::placeholder {
     font-size: 16px;
   }
-
   .form-submit {
     margin-left: 10px;
     margin-right: 0;
@@ -2143,7 +1997,6 @@ a.contact-mail {
     font-size: 16px;
     cursor: pointer;
   }
-
   /* Footer Section 3 */
   .contact-section {
     display: flex;
@@ -2152,16 +2005,13 @@ a.contact-mail {
     align-items: flex-start;
     width: 100%;
   }
-
   .contact-section h5 {
     font-size: 20px;
     margin-bottom: 25px;
   }
-
   .contact-info {
     width: 100%;
   }
-
   a.contact-mail {
     display: block;
     text-decoration: none;
@@ -2170,7 +2020,6 @@ a.contact-mail {
     padding: 5px 0;
     border-bottom: 1px solid #efefef;
   }
-
   .media-links {
     display: flex;
     flex-direction: row;
@@ -2178,24 +2027,20 @@ a.contact-mail {
     align-items: center;
     margin: 15px 0;
   }
-
   .media-links img {
     margin: 10px 0;
     margin-right: 10px;
   }
-
   .media-links .linkedin-media {
     width: 35px;
     height: 35px;
   }
-
   .contact-info .ws {
     color: #efefef;
     margin: 10px 0;
     padding: 5px 0;
     border-bottom: 1px solid #efefef;
   }
-
   .contact-info div {
     display: flex;
     flex-direction: row;
@@ -2203,12 +2048,10 @@ a.contact-mail {
     justify-content: flex-start;
     margin-bottom: 5px;
   }
-
   .contact-info div span {
     width: 50%;
     text-align: left;
   }
-
   .rights {
     font-size: 16px;
     margin-top: 20px;
