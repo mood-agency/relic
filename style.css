@@ -1044,14 +1044,8 @@ img.relic-delta {
 }
 
 .advisors {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: auto;
   margin: 0 auto;
-  text-align: center;
   margin-top: 100px;
   display: grid;
   gap: 10px;
