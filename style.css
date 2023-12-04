@@ -265,9 +265,9 @@ header.header {
 .scrollbar-visible {
   visibility: visible;
   -webkit-animation: appear 200ms ease-in 0s;
-          animation: appear 200ms ease-in 0s;
+  animation: appear 200ms ease-in 0s;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
   background-color: rgba(255, 255, 255, 0.72) !important;
 }
 .scrollbar-visible img.main-logo {
@@ -612,7 +612,7 @@ img.relic-web-home {
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   -moz-column-gap: 15px;
-       column-gap: 15px;
+  column-gap: 15px;
   padding-bottom: 15vh;
 }
 @media only screen and (max-width: 768px) {
@@ -627,7 +627,7 @@ img.relic-web-home {
 .renders_img img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   aspect-ratio: 16/12;
 }
 
@@ -1049,7 +1049,7 @@ img.relic-delta {
   margin-top: 100px;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(3, 0.2fr);
+  grid-template-columns: repeat(2, 0.2fr);
   align-content: center;
   justify-content: center;
 }
@@ -1422,7 +1422,7 @@ a.contact-mail {
   .scrollbar-visible {
     visibility: visible;
     -webkit-animation: appear 200ms ease-in 0s;
-            animation: appear 200ms ease-in 0s;
+    animation: appear 200ms ease-in 0s;
   }
   @-webkit-keyframes appear {
     from {
@@ -2086,4 +2086,4 @@ a.contact-mail {
 
 .animate__slideInRight {
   opacity: 1 !important;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
